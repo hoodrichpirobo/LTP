@@ -1,0 +1,37 @@
+/** Exercise 3. Code to check the orderedList method */
+public static void main(String[] args) {
+    FiguresGroup g = new FiguresGroup();
+    g.add(new Circle(1.0, 6.0, 6.0));
+    g.add(new Rectangle(2.0, 5.0, 10.0, 12.0));
+    g.add(new Triangle(3.0, 4.0, 10.0, 2.0));
+    g.add(new Circle(4.0, 3.0, 1.0));
+    g.add(new Triangle(5.0, 1.0, 1.0, 2.0));
+    g.add(new Square(6.0, 7.0, 15));
+    g.add(new Rectangle(7.0, 2.0, 1.0, 3.0));
+    System.out.println(g.orderedList());
+}
+
+/** Figure 1. Code to draw circles */
+    int n = (int)radius;
+    for (int j = 0; j <= n * 2; j++) {
+        for (int i = 0; i <= n * 2; i++) {
+            if (Math.pow(i - n, 2.0) + Math.pow(j - n, 2.0) 
+                <= (int)Math.pow(n, 2)) {
+                System.out.print(c);
+            } 
+            else {
+                System.out.print(" "); 
+            }
+        }
+        System.out.println();
+    }
+
+/** Figure 2. Code to draw rectangles */
+    int b = (int) base;
+    int h = (int) height;
+    for (int i = 0; i < h; i++) {
+        for (int j = 0; j < b; j++) {
+            System.out.print(c);
+        }
+        System.out.println();
+    } 
